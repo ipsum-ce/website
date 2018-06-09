@@ -51,6 +51,9 @@
 						<div class="row align-items-center mobile-center">
 							<div class="col-lg-6 col-md-12 text-lg-left text-center res-m-bttm">
 								<div class="header-txt">
+									<h6 class="lead animated coinInfo" data-animate="fadeInUp" data-delay="1">Marketcap: <span marketcapUSD></span> / <span marketcapBTC></span></h6>
+									<h6 class="lead animated coinInfo" data-animate="fadeInUp" data-delay="1">Volume: <span volumeUSD></span> / <span volumeBTC></span> <small>Last 24hs</small></h6>
+									<h6 class="lead animated coinInfo" data-animate="fadeInUp" data-delay="1">Price: <span priceUSD></span> / <span priceBTC></span> | Change: <span change></span> <small>Last 24hs</small></h6>
 									<h1 class="animated" data-animate="fadeInUp" data-delay="1.25">
 										Our goal is to automate payment acceptance for the machine to machine economy.
 									</h1>
@@ -541,5 +544,29 @@
 		</div>
 		<script src="assets/js/jquery-v3.3.1.min.js"></script>
 		<script src="assets/js/global.min.js?ver=0.1.1"></script>
+		<script>
+			const endpointAPI = 'https://ipsum-api.herokuapp.com/api/v1/ipsum';
+			const formatNumber = (value) => {
+				return value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+			}
+			const getInfo = () => {
+				$.ajax({
+					url: endpointAPI,
+					success: ipsInfo => {
+						$('[marketcapUSD]').text(`$${formatNumber(ipsInfo['stats-ips']['marketcap-usd'])}`);
+						$('[marketcapBTC]').text(`${formatNumber(ipsInfo['stats-ips']['marketcap-btc'])} BTC`);
+						$('[volumeUSD]').text(`$${formatNumber(ipsInfo['stats-ips']['volume-usd'])}`);
+						$('[volumeBTC]').text(`${formatNumber(ipsInfo['stats-ips']['volume-btc'])} BTC`);
+						$('[priceUSD]').text(`$${ipsInfo['stats-ips']['price-usd']}`);
+						$('[priceBTC]').text(`${ipsInfo['stats-ips']['price-btc']} BTC`);
+						$('[change]').text(`${formatNumber(ipsInfo['stats-ips']['change'])}%`);
+					}
+				})
+			}
+
+			$(() => {
+				getInfo()
+			});
+		</script>
 	</body>
 </html>
