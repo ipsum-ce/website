@@ -564,7 +564,7 @@
 							$('[volumeUSD]').text(`$${formatNumber(ipsInfo['stats-ips']['volume-usd'])}`);
 							$('[volumeBTC]').text(`${formatNumber(ipsInfo['stats-ips']['volume-btc'])} BTC`);
 							$('[priceUSD]').text(`$${ipsInfo['stats-ips']['price-usd']}`);
-							$('[priceBTC]').text(`${ipsInfo['stats-ips']['price-btc']} BTC`);
+							$('[priceBTC]').text(`${ipsInfo['stats-ips']['price-btc'].toFixed(8)} BTC`);
 							$('[change]').text(`${formatNumber(ipsInfo['stats-ips']['change'])}%`);
 						} else {
 							console.log(xhr.status, xhr.error);
